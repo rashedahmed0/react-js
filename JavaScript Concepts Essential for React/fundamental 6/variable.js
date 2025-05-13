@@ -1,0 +1,11 @@
+const name = 'rial';
+console.log(name);
+let age = 24;
+age = 25;
+console.log(age);
+let number1 = '23.563';
+let intNumber = parseInt(number1);
+console.log(number1);
+console.log(intNumber);
+let floatNumber = parseFloat(number1);
+console.log(floatNumber);
