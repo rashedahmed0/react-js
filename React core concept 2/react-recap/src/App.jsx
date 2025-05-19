@@ -1,5 +1,6 @@
 import './App.css'
 import Handls from './Handls'
+import State from './State'
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <>
 
       <h1>Vite + React</h1>
+      <State></State>
       <Handls></Handls>
 
     </>
