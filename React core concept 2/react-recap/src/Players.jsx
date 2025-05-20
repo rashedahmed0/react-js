@@ -1,21 +1,19 @@
-import { useEffect, useState } from "react";
-import Todo from "./Todo";
+import { useEffect, useState } from "react"
+import Player from "./Player";
 
-export default function Todos() {
-    const [todo, setTodo] = useState([]);
-
+export default function Players() {
+    let [player, setPlayer] = useState([]);
     useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/todos')
+        fetch('https://jsonplaceholder.typicode.com/users')
             .then(res => res.json())
-            .then(data => setTodo(data));
-    }, []);
-
+            .then(data => setPlayer(data))
+    }, [])
     return (
         <div>
-            <h3>Todos: {todo.length}</h3>
+            <h3>players : {player.length}</h3>
             {
-                todo.map(t => <Todo key={t.id} todo={t} />)
+                player.map(p => <Player player={p}></Player>)
             }
         </div>
-    );
+    )
 }

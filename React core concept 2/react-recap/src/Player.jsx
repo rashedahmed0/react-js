@@ -1,9 +1,9 @@
 export default function Player({ player }) {
-    console.log(player);
+    let { name, email } = player;
     return (
         <div>
-            <p>name : {player.name}</p>
-            <p>email :{player.email}</p>
+            <p>Name : {name} </p>
+            <p>Email : {email}</p>
         </div>
     )
 }
