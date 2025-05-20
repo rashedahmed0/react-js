@@ -1,15 +1,21 @@
+
 import './App.css'
-import Handls from './Handls'
-import State from './State'
+import Players from './Players'
+import Posts from './Posts'
+import Todos from './Todos'
+import Users from './Users'
 
 function App() {
+
 
   return (
     <>
 
       <h1>Vite + React</h1>
-      <State></State>
-      <Handls></Handls>
+      <Players></Players>
+      <Todos></Todos>
+      {/* <Posts></Posts> */}
+      <Users></Users>
 
     </>
   )
